@@ -1,38 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+
+* {
+  font-family: 'Shippori Mincho B1', serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
+  background: lightblue;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 100px;
+}
+
+.todo-container {
+  display: flex;
+  width: 80%;
+  height: 80vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  padding-bottom: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todos {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: space-around;
+  background: coral;
+}
+
+.listItem {
+  border: 1px solid black;
 }
